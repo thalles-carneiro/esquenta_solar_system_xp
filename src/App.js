@@ -1,8 +1,14 @@
 import React from 'react';
+import * as Component from './components';
 
 class App extends React.Component {
   render() {
-    return (<p>Game of Thrones</p>);
+    return (
+      <>
+        <Component.Header />
+        <Component.CharacterList />
+      </>
+    );
   }
 }
 
