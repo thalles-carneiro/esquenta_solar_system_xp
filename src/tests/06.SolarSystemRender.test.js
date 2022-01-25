@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 
 import CharacterList from '../components/CharacterList';
-import Character from "../data/Character";
+import Characters from "../data/characters";
 
 describe('6 - Renderize uma lista com os personagens de Game of Thrones', () => {
   it('Será verificado se é renderizado um componente `<CharCard />` para cada personagem da lista', () => {
@@ -18,7 +18,7 @@ describe('6 - Renderize uma lista com os personagens de Game of Thrones', () => 
     const allCharacters = screen.getAllByTestId('char-name');
 
     allCharacters.forEach((char, index) => {
-      expect(char).toHaveTextContent(Character[index].fullName);
+      expect(char).toHaveTextContent(Characters[index].fullName);
     });
   });
 });
