@@ -10,9 +10,9 @@ describe('5 - Crie um componente chamado `CharCard`', () => {
 
   it('Será validado se o componente `<CharCard />` possui uma div com o atributo `data-testid="char-card"`', () => {
     render(<CharCard charName="Jon" charTitle="No Nothing" charQuote="Xablau!" charImage="path-to-image" />);
-    const CharCard = screen.getByTestId("char-card");
+    const CharacterCard = screen.getByTestId("char-card");
     
-    expect(CharCard).toBeInTheDocument();
+    expect(CharacterCard).toBeInTheDocument();
   });
 
   it('Será validado se é renderizado o texto recebido pela prop `charName`', () => {
